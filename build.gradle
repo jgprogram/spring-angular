@@ -1,0 +1,4 @@
+allprojects {
+    group = 'com.vattenfall.shipit'
+    version = '0.0.1-SNAPSHOT'
+}

@@ -1,0 +1,13 @@
+// DOC - https://github.com/srs/gradle-node-plugin/blob/master/docs/node.md
+
+plugins {
+  id 'java'
+  id "com.moowork.node" version "1.2.0"
+}
+
+jar.dependsOn 'npm_run_build'
+
+// copy angular-app to static because Spring Boot will automatically add static web resources located within static
+jar {
+  from 'dist/timereporting-ui' into 'static'
+}
