@@ -1,8 +1,10 @@
+<router-outlet></router-outlet>
+
 <section class="todoapp">
   <header class="header">
     <h1>Time reporting</h1>
     <input class="new-todo" placeholder="What needs to be done?" autofocus="" [(ngModel)]="newTodo.text"
-           (keyup.enter)="addTodo(newTodo)">
+      (keyup.enter)="addTodo(newTodo)">
   </header>
   <section class="main" *ngIf="todos.length > 0">
     <ul class="todo-list">
