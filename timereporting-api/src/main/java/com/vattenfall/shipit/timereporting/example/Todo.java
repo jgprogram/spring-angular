@@ -1,4 +1,4 @@
-package com.vattenfall.shipit.timereporting;
+package com.vattenfall.shipit.timereporting.example;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

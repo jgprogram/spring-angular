@@ -1,4 +1,4 @@
-package com.vattenfall.shipit.timereporting;
+package com.vattenfall.shipit.timereporting.example;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

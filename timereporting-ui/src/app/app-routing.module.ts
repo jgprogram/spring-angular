@@ -10,6 +10,11 @@ const routes: Routes = [
     path: 'workspace',
     loadChildren: './workspace/workspace.module#WorkspaceModule'
   }
+  ,
+  {
+    path: 'example',
+    loadChildren: './example/example.module#ExampleModule'
+  }
 ];
 
 @NgModule({
