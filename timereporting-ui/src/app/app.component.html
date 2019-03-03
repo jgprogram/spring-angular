@@ -1,2 +1,31 @@
-<p>Welcome in app :-)</p>
-<router-outlet></router-outlet>
+<div fxLayout="row wrap" fxLayoutAlign="center center" class="layout-wrapper">
+  <div fxFlex="90%" fxFlex.lt-md="100%" class="flex-wrapper">
+    <mat-toolbar color="primary">
+      <div>
+        <button mat-icon-button (click)="sidenav.toggle()">
+          <mat-icon>menu</mat-icon>
+        </button>
+      </div>
+      <div>
+        Time Reporting App
+      </div>
+    </mat-toolbar>
+    <mat-sidenav-container class="main-container">
+      <mat-sidenav mode="side" #sidenav>
+        <mat-nav-list>
+          <a mat-list-item routerLink="/workspace">
+            <mat-icon>calendar_today</mat-icon> <span class="nav-caption">Workspace</span>
+          </a>
+          <a mat-list-item routerLink="/admin">
+            <mat-icon>settings_applications</mat-icon> <span class="nav-caption">Admin</span>
+          </a>
+        </mat-nav-list>
+      </mat-sidenav>
+      <mat-sidenav-content>
+        <div fxLayout="column" fxLayoutAlign="space-around center">
+          <router-outlet></router-outlet>
+        </div>
+      </mat-sidenav-content>
+    </mat-sidenav-container>
+  </div>
+</div>

@@ -3,6 +3,11 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   {
+    path: '',
+    redirectTo: '/workspace',
+    pathMatch: 'full'
+  },
+  {
     path: 'admin',
     loadChildren: './admin/admin.module#AdminModule'
   },
